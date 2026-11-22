@@ -6,7 +6,7 @@ from datetime import datetime
 
 app = FastAPI(title="BTTS-IA", version="1.0")
 
-DB = "btts.db"
+DB = "/tmp/btts.db"
 
 def init_db():
     with sqlite3.connect(DB) as con:
